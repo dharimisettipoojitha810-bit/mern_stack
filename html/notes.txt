@@ -256,17 +256,127 @@ Tables in HTML:
         2.colspan
         3.align
         4.bgcolor
+
+
   form Attributes:
   ----------------
-  1.action 
-  2. method
+  1.action  : it will accept the url as the value
+  2. method : it will use either GET,POST 
+
     fieldset Attributes:
-    1. style
+    ----------------
+    1.style :
     2.id 
-    3. class
+    3.class
 
 legend Attributes:
 1.algin
 2.style
 3.id
 4.class
+
+label Attributes:
+1. for (used to link input  field)
+2.id
+3.class 
+4.style
+
+input attributes:
+1.type
+2.id
+3.name
+4.placeholder
+5.min
+6.max
+7.pattern
+8.minlength
+9.maxlength
+10.required
+11.readonly
+12.style
+13.class
+
+
+Button Attributes:
+------------------
+1.id
+2.class 
+3.required
+4.placeholder
+5.style
+
+
+
+textarea Attributes:
+1.id 
+2.class
+3.required
+4.placeholder
+5.style
+   
+
+input type attributes value:
+---------------------------
+1.text
+2.email
+3.password
+4.date 
+5.datetime
+6.datetime-local
+7.week
+8.month
+9.tel 
+10.radio
+11.checkbok
+12.range
+13.url
+14.image
+15.button
+16.submit
+17.reset 
+18.file 
+19.search
+20.numbers
+
+
+
+media tags:
+------------
+>media are used to dispaly audio,video,or to embed google maps, youtube videos, document,webpages...etc
+> media tage like
+1.audio
+    > <audio></audio> are used to dispaly audios in web pages
+          audio tags attributes:
+          ----------------------
+            1.src(source)
+            2.controls
+            3.muted
+            4.loop
+           5.autoplay
+
+ 2.video 
+  <videos> are used to display the video in webpages
+  video tag Attributes:
+  -------------------
+  1.src
+  2.controls
+  3.muted
+  4.loop
+  5.audioplay
+  6.heig
+  
+  
+  3. ifame
+       ><ifame> are used to embed google maps,youtube videos,documents, websites , webpages........
+
+
+    iframe attributes:
+    -----------------
+    1.src
+    2.frameborder
+    3.height
+    4.width       
+
+
+
+

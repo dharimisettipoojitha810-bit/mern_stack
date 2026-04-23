@@ -6,13 +6,13 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
-        <fieldset>
-            <legend align="center"> login form </legend> 
-            <label for="username"> username :</label>
-            <input type="text" id="username" placeholder="enter username "> <br> </br>
-            <label for="password"> password :</label>
-            <input type="text" id="password" placeholder="enter password ">
+    <form action="" method="get">
+        <fieldset style="background-image:linear-gradient(purple,pink) ;border-radius: 10px 50px;padding:30px ">
+            <legend align="center"> Login form </legend> 
+            <label for="username"> Username :</label>
+            <input type="text" maxlength="7" minlength="3" required="Username" placeholder="enter username "> <br> </br>
+            <label for="password"> Password :</label>
+            <input type="text" maxlength="8" minlength="3" required="Password" placeholder="enter password ">
             <br><br>
             <button type="submit">login</button> <br><br>
             <button type="reset">Cancle</button>

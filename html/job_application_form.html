@@ -1,0 +1,107 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 220vh;
+            width: 400px;
+            margin: auto;
+            background-image: url("https://tse2.mm.bing.net/th/id/OIP.WUut-UQ_Dm76RIgkzK6VNQHaEK?rs=1&pid=ImgDetMain&o=7&rm=3");
+            background-size: 5px;        
+       }
+        fieldset {
+            border: none;
+            backdrop-filter: blur(50px);
+            margin: 20px;
+            padding: 30px;
+            border-radius: 10px 5px;
+            box-shadow: 10px 10px 5px white;
+        }
+label {  
+       color: rgb(0,0,0);
+       font-size:20px;
+       font-weight: bold;
+       font-style: italic;
+       margin-right: 20px
+
+
+
+}
+button {
+            padding; 10px 30px
+            background-color: salmon;
+            font-weight: bold;
+            font-style: italic;
+            font-family:-moz-only-whitespace;
+            border-radius:8px;
+         }
+            
+    </style>
+</head>
+
+<form action="" method="">
+    <fieldset>
+
+        <h1> Job Application Form</h1>
+        <label for="fname">First name:
+            <input type="text" id="fname" maxlength="8" minlength="3" required=""
+                placeholder="Enter first Name"><br><br>
+
+            <label for="lname">Last name:
+                <input type="text" id="lname" maxlength="8" minlength="3" required="" placeholder="Lname"><br><br>
+
+                <label for="email">Email:
+                    <input type="text" id="email" required="" placeholder="Email"><br><br>
+
+
+                    <label for="Date ">Date of Birth:
+                        <input type="date" id="Date of Birth"><br><br>
+
+                        <label for="State">State:
+                            <input type="text" id="state" required="" placeholder="state"><br><br>
+
+                            <label for="phNo">phNo:
+                                <input type="text" id="phno" maxlength="10" minlength="10" required=""
+                                    placeholder="+91"><br><br>
+
+                                <label for="Address"> Address:
+                                    <textarea name="" rows="3" cols="30" id="address"></textarea><br><br>
+
+                                    <label for="Gender">Gender:</label>
+                                    <input type="radio" id="male" name="Gender" value="Male">
+                                    <label for="male">Male</label>
+                                    <input type="radio" id="Female" name="Gender" value="Female">
+                                    <label for="Female">Female</label><br><br>
+
+                                    <label for=" skills">skills:</label>
+                                    <input type="checkbox"> nodejs
+                                    <input type="checkbox"> CI/CD
+                                    <input type="checkbox"> mangodb
+                                    <input type="checkbox"> git <br><br>
+                                    <label for="">Language</label>
+                                    <input type="range"> English
+                                    <input type="range"> Telugu
+                                    <input type="range"> Hindi <br><br>
+                                    <label for="">Resume</label>
+                                    <input type="file"> <br><br>
+
+                                    <button type="Submit"> submit</button> <br><br>
+
+
+                                </label>
+                            </label>
+                        </label></label></label></label>
+    </fieldset>
+</form>
+
+
+
+</body>
+
+</html>
