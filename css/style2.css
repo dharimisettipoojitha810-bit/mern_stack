@@ -1,0 +1,29 @@
+label{
+    color:aqua;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+button{
+    background-color: blueviolet;
+    padding: 10px 30px;
+
+}
+
+label::after{
+    content: "*";
+    color: brown;
+}
+
+
+ label:first-of-type::before{
+    content: "❤️";
+ }
+
+ label:last-of-type::before{
+    content: "😍";
+ }
+
+button{
+    
+}

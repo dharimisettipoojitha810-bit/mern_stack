@@ -378,5 +378,40 @@ media tags:
     4.width       
 
 
+    Anchor tag in HTML:
+    ------------------
+            >> <a></a> tag is used to link external web sites,webpages,document,javascript alert message ...etc
+            >><a></a> tag content default colour: blue
+            >> active <a> tag content colour : red
+            >> visited <a> tag content colour : purple
+
+            Anchor tag attributes:
+            ----------------------
+            1.href:it will accept url or path as a value
+            2.target:it will decide the page will open in new tab or same tab based on the value [_blank, _self, _top _parent]
+            3.download:
+
+            semantic tags:
+            -------------
+            >> semantic tags are used to build proper structure of code/webpages
+            >> using semantic tags we can increse SEO( search engine optimization) and also increse the code readability
+            >> semantic are develop friendly
+
+            semantic tags like:
+            -------------------
+             1.<header>
+             2.<footer>
+             3.<nav>
+             4.<main>
+             5.<section>
+             6.<figure>
+             7.<aside>
+             8.<article>
+             9.<details>
+             10.<strong>
+             11.<email>
+
+
+                   
 
 

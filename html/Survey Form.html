@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Form</title>
+</head>
+<body>
+
+    <h2>Survey Form</h2>
+
+    <form>
+        <!-- User Name -->
+        <label for="name">User Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Username"><br><br>
+
+    
+        <label for="feedback">Feedback:</label><br>
+        <textarea id="feedback" name="feedback" rows="4" cols="40" placeholder="feedback"></textarea><br><br>
+
+        
+        <label>Rating:</label><br>
+        <input type="radio" name="rating" value="1"> 1
+        <input type="radio" name="rating" value="2"> 2
+        <input type="radio" name="rating" value="3"> 3
+        <input type="radio" name="rating" value="4"> 4
+        <input type="radio" name="rating" value="5"> 5
+        <br><br>
+
+        
+        <label for="tech">Favorite Technology:</label><br>
+        <select id="tech" name="tech">
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+        </select><br><br>
+
+        
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Subscribe</label><br><br>
+
+    
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>
