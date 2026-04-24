@@ -39,5 +39,28 @@ Types of CSS selectors:
 * simple selectors: id selectors(#) is used to select unique key
 class selectors(.)
 tag selectors(),
-group  selectors(,),
+group  selectors(,),: are used to apply the stylings
 universal selectors(*)
+
+
+*.combinator selectors , relational, combinmation:
+1.descendent selector (space): to target the child elements, direct or indirect it will target
+2.child selector(>): it is used to direct selector p>h4 
+>> both descendent selector and child selector are same functionality
+3. adjacent sibling selector (+):
+4.general sibling selector (~):
+
+
+*.pseudo class selectors :
+  1.structural class selectors
+  >>:first child
+    :last dhild
+    :first-of-Types
+    :last-of-Types
+    :nth-child()
+
+    2.dynamic pseudo class selector:
+    >>: active  ----
+      :visited  ----- anchor tag
+      :focus    ------input tag
+      :hover
