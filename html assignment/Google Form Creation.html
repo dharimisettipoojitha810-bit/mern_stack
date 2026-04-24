@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Google Form Style Survey</title>
+</head>
+<body>
+
+    <h2>Survey Form</h2>
+
+    <form>
+
+        
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+        
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" placeholder="Enter your age" required><br><br>
+
+        
+        <label for="tech">Favorite Technology:</label><br>
+        <select id="tech" name="tech" required>
+            <option value="">--Select--</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="js">JavaScript</option>
+            <option value="python">Python</option>
+        </select><br><br>
+
+        
+        <label>Rate your experience:</label><br>
+        <input type="radio" name="rating" value="1" required> 1
+        <input type="radio" name="rating" value="2"> 2
+        <input type="radio" name="rating" value="3"> 3
+        <input type="radio" name="rating" value="4"> 4
+        <input type="radio" name="rating" value="5"> 5
+        <br><br>
+
+        
+        <label for="feedback">Feedback:</label><br>
+        <textarea id="feedback" name="feedback" placeholder="Write your feedback here..." required></textarea><br><br>
+
+        
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Subscribe to updates</label><br><br>
+
+        
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+</html>

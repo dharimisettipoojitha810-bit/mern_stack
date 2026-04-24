@@ -411,7 +411,10 @@ media tags:
              10.<strong>
              11.<email>
 
-
+  
                    
-
-
+To remove html file in git hub
+>> git rm--cached
+   
+   to remove .git
+rmdir /s /git
