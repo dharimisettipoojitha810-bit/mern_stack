@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img[alt="image"]{
+            height: 250px;
+            width: 250px;
+            border-radius: 50px;
+            border-color: rgb(201, 22, 22);
+        }
+        h1[id$='tag']{
+            color: brown;
+        }
+
+        h1[id |='heading']{
+            color:green;
+        }
+        h1[id *='heading']{
+            color: blue;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1 id="heading">headings</h1>
+    <h1 id="heading-tag">headings</h1>
+    <h1 id="heading tag">headings</h1>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNmJ3ymPIMejOylqT8jBFrSZW2IHopkXctTg&s" alt="image1">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl37Ha8cXj2c-sdAN1bfoPl31dXDgypc55Kw&s" alt="image2">
+    
+</body>
+</html>

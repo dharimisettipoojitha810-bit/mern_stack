@@ -57,10 +57,136 @@ universal selectors(*)
     :last dhild
     :first-of-Types
     :last-of-Types
-    :nth-child()
+    :nth-child(1para either numbers or )
 
     2.dynamic pseudo class selector:
     >>: active  ----
       :visited  ----- anchor tag
       :focus    ------input tag
       :hover
+
+
+    3.pseudo elements selectors:
+    >> ::after
+    >> ::before
+    >> ::first-letter
+    >> ::first-line
+    >> ::maker
+    >> ::selector
+    >> ::placeholder
+
+
+    key::=li{list-itme-$}*4
+    it will display 4set of lists
+
+
+4.Attribute selectors: 
+>> Attributes selectors are used to target HTML elements based on Attributes
+ ex:<h1 align="center" id="headind"> hello </h1>
+ <h1 id="heading">HEllo </h1>
+
+ syntax: selector[Attributename="value"]{
+.........styling....
+ }
+
+ types:
+ 1.[AttributeName="value"]:
+ 2.[AttributeName^="value"]: exact value will be target  the first match letter or first word
+ 3.[AttributeName$="value"]: tag , -tag same matching it will display the coloue 
+  4.[AttributeName|="value"]:used to target the starting point
+ 5.[AttributeName*="value"]: it will select all if it match any letter it will match(universal)
+     
+
+>> Color Values:
+1.colouename
+2.rgb:255(red,green,blue) 
+3.rgba(red,green,blue,alpha)
+4.hsl(hue,saturation,lightness)
+5.hsl(hue-0-360deg,saturation-1-100%,lightness-1-100%,alpha:0-10)
+6,hexa code: to pass the 6 decimal code or +2 if they add then it is alpha
+7.transparent:it will not disply the value untill we select it
+8.color():
+
+>>>> formula :ol>(li>h4{headings})*6
+install this to pick the color:Color Picker HEX 
+
+
+
+Text properties:
+--> text properties are used to apply styling for only 'text'
+properties Like:
+----------------
+1.Text-alignment:
+       i.text-align: left,right,center,start,end,justify
+       ii.word-spacing
+       iii.letter-spacing
+       iv.text-indent
+       v.line-height
+2.text decoration properties:
+        i.text-decoration-line
+        ii.text-decoration-color
+        iii.text-decoration-style
+        iv.text-decoration-thickness
+        v.text-decoration (short hand form)     
+
+
+>>>.main container it will open one div tag with class
+
+
+3.text transform properties:
+   a.text-transform: lowercase, uppercase, captilalized
+
+4.text-overflow properties:
+  a.overflow : visible,auto,hidden,scroll
+  b.overflow-x
+  c.overflow-y
+
+5.font properties
+  a.font-size
+  b.font-weight
+  c.font-style
+  d.font-family
+
+
+>>CSS Box Model:
+---------------
+1.Padding:space between content and border
+   padding properties:
+     i.padding-top
+     ii:padding-bottom
+     iii:padding-left 
+     iv:padding-right
+     v:padding(short hand form)
+
+2.border: the space between padding and margin
+ border properties:
+ ----------------
+ 1.border-stylr
+ 2.border-width
+ 3.border-color
+ 4.border-(short hand form)
+ 5.border-top
+ 6.border-left
+ 7.border-right
+ 8.border-bottom
+
+border radius properties
+-----------------------
+1.border-top-left-radius
+2.border-top-right-radius
+3.border-bottom-left-radius
+4.border-bottom-right-radius
+5.border-radius-(short hand form)
+
+
+flex properties:
+grid properties:
+position properties:
+animations:
+media queries:
+
+
+
+
+
+3.margin
