@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            border:2px solid black;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        input{
+            width: 400px;
+            padding: 10px 0px;
+            border: 1px solid black;
+        }
+        #button-container{
+            margin-top: 30px;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            row-gap: 10px;
+            column-gap: 10px;
+        }
+
+        #button-container div{
+            border: 2px solid red;
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        #button-container div:nth-child(16){ 
+            background-color: rgb(230, 176, 176);
+            grid-row-start: 5;
+            grid-column-start: 4;
+            grid-row-end: 7;
+        }
+        #button-container div:nth-child(1){
+            background-color: rgb(42, 169, 169);
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <input type="number" readonly placeholder="0">
+        </div>
+        <div id="button-container">
+            <div>sin</div>
+            <div>cos</div>
+            <div>tan</div>
+            <div>AC</div>
+            <div>int</div>
+            <div>dif</div>
+
+            <div>%</div>
+            <div>9</div>
+            <div>8</div>
+            <div>7</div>
+            <div>*</div>
+
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>-</div>
+
+            <div>+</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+
+            <div>0</div>
+            <div>=</div>
+            <div>/</div>
+            
+            
+        </div>
+    </div>
+</body>
+</html>

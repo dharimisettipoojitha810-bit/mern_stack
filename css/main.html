@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 2 !important;
+
+        }
+
+        ol {
+            background-color: #21053d;
+            padding: 20px 0px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: row;
+            height: 50px;
+            flex-wrap: wrap;
+        }
+
+        li {
+            color: rgb(243, 179, 123);
+            font-style: italic;
+            font-weight: bolder;
+            text-shadow: 2px 2px 2px black;
+            background-color: rgb(244, 235, 237);
+            list-style: none;
+            border-radius: 8px;
+            padding: 10px;
+            flex-grow: 1;
+            margin: 0px 30px;
+            text-align: center;
+        }
+
+        video {
+            width: 100%;
+            height: 100vh;
+            
+        }
+
+        #Electronics-devices {
+            padding-top: 150px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+            position: relative;
+            backdrop-filter: blur(10px);
+            bottom: 150px;
+            background-image: linear-gradient(transparent, antiquewhite);
+        }
+
+        #Electronics-devices>div {
+            width: 350px;
+            height: 500px;
+            border: 5px solid #a3adb2;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            border-radius: 20px;
+            padding: 10px 20px;
+            background-color: lightblue;
+            border-color: #660a03;
+            animation-name: moving;
+            animation-duration: 4s;
+        }
+
+        h1 {
+            position: absolute;
+            top: 150px;
+            left: 500px;
+            backdrop-filter: blur(10px);
+            text-shadow: 4px 4px 4px aliceblue;
+            padding: 10px 30px;
+            box-shadow: 5px 5px 5px black;
+            animation-name: scaling;
+            animation-duration: 3s;
+
+
+        }
+
+        #product-card img {
+            height: 250px;
+            width: 200px;
+            border-radius: 10px;
+        }
+
+        #product-card img:hover {
+            transform: skew(10deg);
+            box-shadow: 2px 2px 8px aliceblue;
+        }
+
+        .product-info h4 {
+            color: black;
+            margin-left: 25px;
+            font-style: italic;
+        }
+
+        .btn-container>button {
+            padding: 10px 20px;
+            font-weight: bold;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border-radius: 8px;
+            margin: 0px 20px;
+
+        }
+
+        .btn-container>button:first-child {
+            background-color: antiquewhite;
+            padding: 10px 20px;
+
+        }
+
+        .btn-container>button:last-child {
+            background-color: aquamarine;
+            padding: auto;
+        }
+
+        #Electronics-devices-section {
+            position: relative;
+            bottom: 10px;
+            left: 40px;
+            font-size: 40px;
+            z-index: 1;
+            font-style: italic;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        #Electronics-devices-section :hover {
+            text-decoration: underline;
+            text-shadow: 2px 2px 2px aliceblue;
+            color: rgb(54, 53, 52);
+            cursor: pointer;
+            transform: scaleY(1.5);
+
+        }
+
+        aside{
+            position: fixed;
+            top: 40%;
+            padding:30px 10px;
+            display: inline-flex;
+            flex-direction: column;
+            z-index: 1;
+            margin-left: 10px;
+            border-radius: 50px;
+            height: 280px;
+            background-image: radial-gradient(transparent,black);
+
+
+        }
+        aside img:hover{
+            cursor: pointer;
+            box-shadow: 2px 2px 5px black;
+            transform: translateX(10px);
+           
+
+        }
+        aside img{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+
+        @keyframes scaling{
+            0%{
+                transform: scale(0);
+            }
+            25%{
+                transform: rotate(0deg);
+            }
+            70%{
+                transform: rotate(360deg);
+            }
+
+            100%{
+                transform: rotate(1);
+            }
+         }
+         @keyframes moving{
+            from{
+                transform: translateY(200px);
+            }
+            to{
+                transform: translateY(0px);
+
+            }
+         }
+         body{
+            background-color: aliceblue;
+            animation-name: bgcolorchange;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-delay: 5s;
+         }
+         @keyframes bgcolorchange{
+            0%{
+                background-color: #a3adb2;
+
+            }
+            10%{
+                background-color: #660a03;
+            }
+            20%{
+                 background-color: bisque;
+            }
+            30%{
+                background-color: blanchedalmond;
+            }
+            40%{
+                background-color:cadetblue;
+            }
+            50%{
+                background-color:rgb(41, 4, 41) ;
+            }
+            60%{
+                background-color: chocolate;
+            }
+            70%{
+                background-color: lightcoral;
+            }
+            80%{
+                background-color: lightslategray;
+            }
+         }
+    </style>
+
+</head>
+
+<body>
+    <nav>
+        <ol>
+            <li>Home </li>
+            <li>About</li>
+            <li>Contact</li>
+            <li>Help</li>
+            <li>Feedback</li>
+        </ol>
+    </nav>
+    <main>
+        <section id="background-video">
+            <video autoplay muted loop>
+                <source src="./bg video.mp4" type="video/mp4">
+            </video>
+        </section>
+        <section>
+            <h1>Welcome to Alpha Mart</h1>
+        </section>
+        <h2 id="Electronics-devices-section">Electronics Devices</h2>
+        <section id="Electronics-devices">
+            <div id="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLjQ7-sGflJY8BECMtH3j7ocVfadimRy6zpw&s"
+                    alt="">
+
+                <div class="product-info">
+
+                    <h4>Name: Laptop</h4>
+                    <h4>Cost:₹70,000</h4>
+                    <h4>Rating:4.6/5.0</h4>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sed dignissimos sapiente ipsa,
+                        laudantium molestiae magnam, doloremque ullam fugiat sit earum. Officia dignissimos debitis
+                        aperiam, qui officiis ipsa velit nemo?</h4>
+                </div>
+
+
+                <div class="btn-container">
+                    <button>
+                        Buy
+                    </button>
+                    <button>Add Card</button>
+                </div>
+            </div>
+
+            <div id="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLjQ7-sGflJY8BECMtH3j7ocVfadimRy6zpw&s"
+                    alt="">
+
+                <div class="product-info">
+
+                    <h4>Name: Laptop</h4>
+                    <h4>Cost:₹70,000</h4>
+                    <h4>Rating:4.6/5.0</h4>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sed dignissimos sapiente ipsa,
+                        laudantium molestiae magnam, doloremque ullam fugiat sit earum. Officia dignissimos debitis
+                        aperiam, qui officiis ipsa velit nemo?</h4>
+                </div>
+
+
+                <div class="btn-container">
+                    <button>
+                        Buy
+                    </button>
+                    <button>Add Card</button>
+                </div>
+            </div>
+            <div id="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLjQ7-sGflJY8BECMtH3j7ocVfadimRy6zpw&s"
+                    alt="">
+
+                <div class="product-info">
+
+                    <h4>Name: Laptop</h4>
+                    <h4>Cost:₹70,000</h4>
+                    <h4>Rating:4.6/5.0</h4>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sed dignissimos sapiente ipsa,
+                        laudantium molestiae magnam, doloremque ullam fugiat sit earum. Officia dignissimos debitis
+                        aperiam, qui officiis ipsa velit nemo?</h4>
+                </div>
+
+
+                <div class="btn-container">
+                    <button>
+                        Buy
+                    </button>
+                    <button>Add Card</button>
+                </div>
+            </div>
+            <div id="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLjQ7-sGflJY8BECMtH3j7ocVfadimRy6zpw&s"
+                    alt="">
+
+                <div class="product-info">
+
+                    <h4>Name: Laptop</h4>
+                    <h4>Cost:₹70,000</h4>
+                    <h4>Rating:4.6/5.0</h4>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sed dignissimos sapiente ipsa,
+                        laudantium molestiae magnam, doloremque ullam fugiat sit earum. Officia dignissimos debitis
+                        aperiam, qui officiis ipsa velit nemo?</h4>
+                </div>
+
+
+                <div class="btn-container">
+                    <button>
+                        Buy
+                    </button>
+                    <button>Add Card</button>
+                </div>
+            </div>
+            <div id="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLjQ7-sGflJY8BECMtH3j7ocVfadimRy6zpw&s"
+                    alt="">
+
+                <div class="product-info">
+
+                    <h4>Name: Laptop</h4>
+                    <h4>Cost:₹70,000</h4>
+                    <h4>Rating:4.6/5.0</h4>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sed dignissimos sapiente ipsa,
+                        laudantium molestiae magnam, doloremque ullam fugiat sit earum. Officia dignissimos debitis
+                        aperiam, qui officiis ipsa velit nemo?</h4>
+                </div>
+
+
+                <div class="btn-container">
+                    <button>
+                        Buy
+                    </button>
+                    <button>Add Card</button>
+                </div>
+            </div>
+            <div id="product-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLjQ7-sGflJY8BECMtH3j7ocVfadimRy6zpw&s"
+                    alt="">
+
+                <div class="product-info">
+
+                    <h4>Name: Laptop</h4>
+                    <h4>Cost:₹70,000</h4>
+                    <h4>Rating:4.6/5.0</h4>
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sed dignissimos sapiente ipsa,
+                        laudantium molestiae magnam, doloremque ullam fugiat sit earum. Officia dignissimos debitis
+                        aperiam, qui officiis ipsa velit nemo?</h4>
+                </div>
+
+
+                <div class="btn-container">
+                    <button>
+                       Buy 
+                    </button>
+                    <button>Add Card</button>
+                </div>
+            </div>
+
+        </section>
+        <section>
+            <aside>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjH5WQA4p_HK44fG8QSiwPT4Tg3GdBYcaqew&s" alt="">
+                <img src="https://img.freepik.com/premium-vector/linkedin-logo-icon_1273375-1174.jpg?semt=ais_hybrid&w=740&q=80" alt="">
+                <img src="https://img.freepik.com/premium-vector/vinnytsia-ukraine-april-29-2023-popular-social-media-logo-twitter-icon-vector-design-realistic-editorial-sign_545793-1694.jpg?semt=ais_hybrid&w=740&q=80" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7Jmck2tuZ-YbRg0u0H9tS2whYbGud6qmDIw&s" alt="">
+
+
+
+            </aside>
+        </section>
+
+    </main>
+
+</body>
+
+</html>

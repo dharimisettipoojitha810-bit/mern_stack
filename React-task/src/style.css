@@ -1,0 +1,47 @@
+/* register-styles.css */
+body {
+  background-color:whitesmoke;
+}
+
+.main-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-box {
+  width: 500px;
+  background: rgb(171, 217, 238);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
+}
+/* login-css */
+
+.login-box {
+  width: 500px;
+  background: palegreen;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 20px rgba(0,0,0,0.1);
+}
+
+h2{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+    margin-bottom: 40px;
+    
+
+}
+
+/* Home-css */
+#home-container{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10vh;
+  background-color: rgb(113, 15, 232);
+
+}

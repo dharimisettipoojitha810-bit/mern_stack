@@ -1,0 +1,33 @@
+#product-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: paleturquoise;
+    margin: 10px;
+    padding: 20px;
+}
+
+#product-container img{
+    height: 250px;
+    width: 150px;
+    border-radius: 10px;
+}
+
+#main-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h4{
+    margin-left: 20px;
+}
+
+button{
+    padding: 10px 30px;
+    background-color: bisque;
+    margin-left: 20px;
+    border-radius: 10px;
+    border: none;
+}

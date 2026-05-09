@@ -1,0 +1,7 @@
+form {
+  background-image: linear-gradient(red,yellow,orange);
+  padding: 20px;
+  color: aqua;
+  margin: 30px;
+  border: 2px solid black;
+}

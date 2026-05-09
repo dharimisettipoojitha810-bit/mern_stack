@@ -1,0 +1,64 @@
+/* nav stylings */
+#login-btn a {
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: italic;
+}
+#login-btn {
+  margin-right: 20px;
+}
+
+#nav-container {
+  background-image: linear-gradient(45deg, #ff930f, #ffba5c, red);
+}
+
+#greeting-btn {
+  position: fixed;
+  z-index: 2;
+  border-radius: 10px;
+  padding: 8px;
+  border: none;
+  top: 250px;
+  background-color: #ffba5c;
+  font-style: italic;
+}
+#greeting-btn:hover {
+  background-color: #f5a83c;
+  text-shadow: 3px 3px 3px aliceblue;
+  font-weight: bold;
+  box-shadow: 2px 2px 2px aliceblue;
+}
+
+/* register form stylings */
+#form-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: bisque;
+}
+#form-container form{
+    /* border: 1px solid black; */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: aliceblue;
+    box-shadow: 5px 5px 5px 5px black;
+}
+#form-container label{
+    font-weight: bold;
+}
+
+#cart-btn{
+    position: fixed;
+  z-index: 2;
+  border-radius: 10px;
+  padding: 8px;
+  border: none;
+  top: 300px;
+  background-color: green;
+  font-style: italic;
+  color: aliceblue;
+  font-weight: bold;
+}

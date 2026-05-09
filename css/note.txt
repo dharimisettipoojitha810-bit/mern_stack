@@ -179,14 +179,44 @@ border radius properties
 5.border-radius-(short hand form)
 
 
-flex properties:
-grid properties:
-position properties:
-animations:
-media queries:
+*flex properties: 
+      1.display:flex;
+      2.flex-direction
+      3.flex-wrap
+      4.justify-comtent
+      5.align-itme
+
+      6.flex-grow
+      7.flex-shrink
+      8.flex
+*grid properties:used to display in grid format
+       1.display :grid
+       2.grid-template-columns
+       3.grid-template-rows
+       4.row-gap
+       5.column-gap
+
+       6.grid-row-start
+       7.grid-row-end
+       8.grid-column-start
+       9.grid-column-end
+
+*position properties: static ,absolute,
+ *animations: 
+      1.define animation used @keyfarmes
+      2.link that animation to html element
+    
+media queries:media queries are used to build reponsive web page based on device width(device view port)
+   -> break points
+   1.smaller devices (mobile with brands) 0px-450px
+   2.media devices (tables/ipad) 450px - 850px
+   3.large devices (laptops ) 850px-1200px
+   4.X-large devices(digital screen) >1200px
+
+@media screen min-width & max-width
 
 
 
 
 
-3.margin
+
