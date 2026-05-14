@@ -1,0 +1,275 @@
+data :
+------
+->raw fact 
+
+Database(1970):
+---------
+     ->place where we can store data is called as a Database
+
+Types of Data:
+---------------
+    1.Structure Data
+                ->data is stored in structured format
+                ->they follow fixed schema
+                  ->ex.sql.mysql,postgres sql, sql server ..etc
+    2.semi-Structure
+              ->no sql databases,
+              ->it will follow structure but it is not fixed schema
+              ->ex:1.MONGODB-           Document format
+                   2.cassandra-         column-family
+                   3.Hbase-             column-family
+                   4.Neo4G-              node
+                   5.Raik -             key-value pair
+    3.unstructure
+          ->audio,video,pdf,doc files are known are unstructure
+
+
+    RBMS:they follow ACID properties
+    ---------------------------------
+    Rules (EfF caught rules):
+    -------------------------
+    ->should define structure
+    ->name datatype
+    ->can not store more than one value
+
+    Drawback:
+    ---------
+      ->low performance (joints,query)
+        ->the issue is faced by google in 2001 so thet introduced "Dynamodb"  is is based on scalability , availability
+        ->in 2008 thet are following nosql format
+
+->nosql is one of the database used to store data that is not fit traditional database(sql)
+
+MongoDB:
+----------
+   ->MongoDB is the NoSQL used to store data inf orm of document format
+  ->it is introduced in the year 2008
+  ->the data is stored in the document format
+  ->Each collection will have a multiple documents
+  -> in doc the data is stored in the JSON format 
+
+Database:
+  -------------------------------------------------------------
+ |  syntax: use databaseName        (to create or switich )    |
+ ---------------------------------------------------------------
+Collection:
+----------
+  ->it is the group of documents in MongoDB
+  ->it is not a fixed schema 
+  -> it is dynamic
+      syntax to create a collection:
+                ----------------------------------------
+                 | db.createCollection('collectionName') |   
+                 ---------------------------------------- 
+
+Document:
+---------
+   ->Document(JSON/BSON) contains group fields
+
+
+   ->Insert Document
+      1.syntax:
+          ---------------------------------------------
+          |  db.collectionName.insertOne({document})   |
+            -------------------------------------------
+
+       2.syntax:
+
+           --------------------------------------------
+          | db.collectionName.insertMany({doc1},{doc2})  |
+          ----------------------------------------------
+
+->the primary key is automatically created by object id 
+
+MONGODB Atlas:directly we can store in cloud(500md free)
+Mongobd compass: it is present in local system , it is a ui tool
+MongoDB interprice: it is a paid version 
+
+
+Datatypes:
+--------------
+   1.string
+   2.number
+   3.boolean
+   4.array
+   5.object
+   6.database
+   7.time
+   8.function
+   9.null
+   10.code
+
+Retrive Documents/data:
+--------------------
+ 1.findOne()         ->used to Retrive one document
+------------
+          syntax:
+          -------------------------------------------------------------------
+          |   db.collectionName.findOne({filter condition},{projection query})  |
+          -------------------------------------------------------------------
+
+          projection:
+               ->projection are used to Retrive required fields
+               ->to display fieldspass value ->1  (_id:1)
+               ->if dont want t0 display value-> 0   (fields:0)
+
+
+
+
+
+ 2.find()             ->used to Retrive multiple documents a time
+  ----------- 
+            syntax:
+          -------------------------------------------------------------------
+          |   db.collectionName.find({filter condition},{projection query})  |
+          -------------------------------------------------------------------
+
+
+
+
+
+update Document fields:
+--------------------
+    1.updateOne()
+            ->is use to update single document at a time
+                syntax:
+                      db.collectionName.updateOne({filter condition},{updated query})
+
+    2.updateMany()
+            ->is used to update multiple documents at a time
+                syntax:
+                     db.collectionName.updateMany({filter condition},{updated query})
+
+operators:
+    1.$set  (used to insert new file)
+    2.$unset  (used to remove the field)
+    3.$inc    (used only in numbers)
+    4.$rename  (used to rename)
+    5.$pop     (used only in arrayas and is used to remove the values we have to use only 1(last) and -1(first) that is for first and last element )
+    6.$push    (used only for arrays to add the elements)
+    7.$pull    (used only in arrays if want to remove the values in between then we can use pull not pop use like this "c")
+
+
+Relational operators
+----------------------
+$ne : not equal
+$gt  :greater
+&lt  :lower
+$gte  :greater than equal to
+$lte :lower than or wqual to
+$eq  :  equal
+
+
+DELETE OPERATIONS:these are used to remove or delete the documents
+-----------------
+  1.deleteOne():
+  2.deleteMany() 
+  3.remove()(legacy function)
+
+
+  syntax:
+      db.collectionName.deleteOne({filter condition})
+      db.collectionName.deleteMany({filter condition})
+      db.collectionName.deleteremove({filter condition})
+Logical operators:
+---------------------
+    1,$and
+    2.$or
+    3.$nor
+    4.$not
+
+
+
+->the below operaters are used in only find()
+1.count()     
+2.sort()
+3.skip()  only for starting documents it is used to pront not in between
+4.limit()  only some upto limit
+
+syntax:   db.collectionName.find().count()
+syntax:   db.collectionName.find().skip(number)
+syntax:   db.collectionName.find().limit(number)
+syntax:   db.collectionName.find().sort({field:value})
+
+Aggregate functions(Aggregate Pipelines):
+----------------------
+  ->these are used to group and then sum
+  ->Aggregate functions are used to perform operations on stage by stage
+     syntax:
+          ---------------------------------------------------
+          |  db.collectionName.aggregate({filter condition})  |
+          ---------------------------------------------------
+      ---------------------------------------------------------
+       db.collectionName.aggregate([
+        {stage 1},{stage 2}
+       ])
+      ------------------------------------------------------
+Aggregate operators:
+----------------------
+  1.$match: used to match the data in collection
+  2.$group :  to find the no.of fields depending on the field given
+
+  Q.display max salary in each dept
+
+          db.Employee_Details.aggregate({
+    $group:{
+     _id:"$department",
+    maxSalaryInEachDept:{$max:"$salary"}
+  }
+      })
+
+     
+    
+  3.$min  :should use in group
+  4.$max  :used in group
+  5,$avg   :used in group
+  6.$sum : to count
+  7.$lookup : to perform joints in Mongobd
+  
+  8.$unwind  : used to create or use data in separate collection   (creates new document)
+      db.Employee_Details.aggregate(
+  
+    {$unwind:"$skills"}
+  
+         )
+
+  9.$project: 
+  10.$sort:
+  11.$limit:
+  12.$out  :
+  db.Employee_Details.aggregate(
+  [
+    {$match:{experience_years:{$gt:6}}},
+    {$group:{
+      _id:"job_title",
+      totalsalaryinthisrole:{$sum:"$salary"},
+      minsalary:{$min:"$salary"},
+      minsalary:{$min:"$salary"},
+      avgsalary:{$avg:"salary"},    
+    }},
+    {$out:"experience_6_years_title_based_salary_report"}
+  ]
+)
+
+ 13.$count
+ 14.$skip
+
+
+
+ Q.WAQ to display customer name and count of the orders
+
+
+
+
+ index:
+ ______
+ 1.createIndex({filedName:1})
+ ->1 ascending order,0 decendind order 
+
+ syntax:
+ ------
+           db.collectionName.createInndex({fieldName:1})
+
+           db.collectionName.getIndexes()
+
+           db.

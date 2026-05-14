@@ -1,0 +1,834 @@
+[
+  {
+    "student_id": 101,
+    "name": "Yash Thakur",
+    "department": "EEE",
+    "age": 22,
+    "marks": {
+      "math": 86,
+      "science": 82,
+      "english": 81
+    },
+    "attendance": 78,
+    "skills": [
+      "Laravel",
+      "Python",
+      "C++"
+    ],
+    "address": {
+      "city": "Jodhpur",
+      "pincode": 342001
+    }
+  },
+  {
+    "student_id": 102,
+    "name": "Swetha Sheikh",
+    "department": "CSE",
+    "age": 22,
+    "marks": {
+      "math": 73,
+      "science": 90,
+      "english": 87
+    },
+    "attendance": 96,
+    "skills": [
+      "React",
+      "C++"
+    ],
+    "address": {
+      "city": "Jaipur",
+      "pincode": 302001
+    }
+  },
+  {
+    "student_id": 103,
+    "name": "Preeti Singh",
+    "department": "IT",
+    "age": 18,
+    "marks": {
+      "math": 85,
+      "science": 56,
+      "english": 76
+    },
+    "attendance": 78,
+    "skills": [
+      "Python",
+      "MongoDB",
+      "C",
+      "SQL"
+    ],
+    "address": {
+      "city": "Mumbai",
+      "pincode": 400001
+    }
+  },
+  {
+    "student_id": 104,
+    "name": "Preeti Sharma",
+    "department": "ECE",
+    "age": 23,
+    "marks": {
+      "math": 67,
+      "science": 62,
+      "english": 71
+    },
+    "attendance": 92,
+    "skills": [
+      "CSS",
+      "DSA",
+      "React"
+    ],
+    "address": {
+      "city": "Jaipur",
+      "pincode": 302001
+    }
+  },
+  {
+    "student_id": 105,
+    "name": "Manish Nair",
+    "department": "ECE",
+    "age": 22,
+    "marks": {
+      "math": 67,
+      "science": 72,
+      "english": 60
+    },
+    "attendance": 71,
+    "skills": [
+      "C",
+      "Verilog",
+      "SolidWorks",
+      "MongoDB"
+    ],
+    "address": {
+      "city": "Trivandrum",
+      "pincode": 695001
+    }
+  },
+  {
+    "student_id": 106,
+    "name": "Jaya Sharma",
+    "department": "IT",
+    "age": 18,
+    "marks": {
+      "math": 87,
+      "science": 84,
+      "english": 79
+    },
+    "attendance": 74,
+    "skills": [
+      "Laravel",
+      "C++"
+    ],
+    "address": {
+      "city": "Lucknow",
+      "pincode": 226001
+    }
+  },
+  {
+    "student_id": 107,
+    "name": "Vinay Das",
+    "department": "ECE",
+    "age": 19,
+    "marks": {
+      "math": 89,
+      "science": 63,
+      "english": 65
+    },
+    "attendance": 95,
+    "skills": [
+      "AutoCAD",
+      "IoT"
+    ],
+    "address": {
+      "city": "Jaipur",
+      "pincode": 302001
+    }
+  },
+  {
+    "student_id": 108,
+    "name": "Shruti Reddy",
+    "department": "MECH",
+    "age": 22,
+    "marks": {
+      "math": 78,
+      "science": 64,
+      "english": 94
+    },
+    "attendance": 93,
+    "skills": [
+      "CSS",
+      "React"
+    ],
+    "address": {
+      "city": "Jaipur",
+      "pincode": 302001
+    }
+  },
+  {
+    "student_id": 109,
+    "name": "Jaya Mehta",
+    "department": "IT",
+    "age": 22,
+    "marks": {
+      "math": 60,
+      "science": 72,
+      "english": 69
+    },
+    "attendance": 84,
+    "skills": [
+      "DSA",
+      "Arduino"
+    ],
+    "address": {
+      "city": "Lucknow",
+      "pincode": 226001
+    }
+  },
+  {
+    "student_id": 110,
+    "name": "Roshni Singh",
+    "department": "ECE",
+    "age": 21,
+    "marks": {
+      "math": 62,
+      "science": 63,
+      "english": 88
+    },
+    "attendance": 70,
+    "skills": [
+      "JavaScript",
+      "IoT",
+      "SolidWorks"
+    ],
+    "address": {
+      "city": "Visakhapatnam",
+      "pincode": 530001
+    }
+  },
+  {
+    "student_id": 111,
+    "name": "Manish Das",
+    "department": "IT",
+    "age": 20,
+    "marks": {
+      "math": 87,
+      "science": 94,
+      "english": 71
+    },
+    "attendance": 70,
+    "skills": [
+      "HTML",
+      "React",
+      "C++"
+    ],
+    "address": {
+      "city": "Coimbatore",
+      "pincode": 641001
+    }
+  },
+  {
+    "student_id": 112,
+    "name": "Suman Joshi",
+    "department": "CIVIL",
+    "age": 21,
+    "marks": {
+      "math": 80,
+      "science": 72,
+      "english": 70
+    },
+    "attendance": 92,
+    "skills": [
+      "Arduino",
+      "CSS",
+      "HTML",
+      "JavaScript"
+    ],
+    "address": {
+      "city": "Kolkata",
+      "pincode": 700001
+    }
+  },
+  {
+    "student_id": 113,
+    "name": "Laxmi Agarwal",
+    "department": "IT",
+    "age": 23,
+    "marks": {
+      "math": 80,
+      "science": 80,
+      "english": 73
+    },
+    "attendance": 71,
+    "skills": [
+      "Arduino",
+      "DSA"
+    ],
+    "address": {
+      "city": "Trivandrum",
+      "pincode": 695001
+    }
+  },
+  {
+    "student_id": 114,
+    "name": "Farhan Rao",
+    "department": "CIVIL",
+    "age": 22,
+    "marks": {
+      "math": 73,
+      "science": 89,
+      "english": 59
+    },
+    "attendance": 82,
+    "skills": [
+      "C++",
+      "Python"
+    ],
+    "address": {
+      "city": "Patna",
+      "pincode": 800001
+    }
+  },
+  {
+    "student_id": 115,
+    "name": "Mohan Reddy",
+    "department": "EEE",
+    "age": 20,
+    "marks": {
+      "math": 93,
+      "science": 83,
+      "english": 73
+    },
+    "attendance": 86,
+    "skills": [
+      "PHP",
+      "React"
+    ],
+    "address": {
+      "city": "Jodhpur",
+      "pincode": 342001
+    }
+  },
+  {
+    "student_id": 116,
+    "name": "Tanvi Paul",
+    "department": "MECH",
+    "age": 19,
+    "marks": {
+      "math": 73,
+      "science": 78,
+      "english": 64
+    },
+    "attendance": 72,
+    "skills": [
+      "Arduino",
+      "Java",
+      "Laravel"
+    ],
+    "address": {
+      "city": "Delhi",
+      "pincode": 110001
+    }
+  },
+  {
+    "student_id": 117,
+    "name": "Sunita Kumar",
+    "department": "EEE",
+    "age": 21,
+    "marks": {
+      "math": 61,
+      "science": 61,
+      "english": 70
+    },
+    "attendance": 94,
+    "skills": [
+      "Arduino",
+      "IoT"
+    ],
+    "address": {
+      "city": "Patna",
+      "pincode": 800001
+    }
+  },
+  {
+    "student_id": 118,
+    "name": "Vikas Singh",
+    "department": "IT",
+    "age": 22,
+    "marks": {
+      "math": 81,
+      "science": 72,
+      "english": 85
+    },
+    "attendance": 87,
+    "skills": [
+      "MongoDB",
+      "JavaScript"
+    ],
+    "address": {
+      "city": "Delhi",
+      "pincode": 110001
+    }
+  },
+  {
+    "student_id": 119,
+    "name": "Yash Verma",
+    "department": "IT",
+    "age": 21,
+    "marks": {
+      "math": 85,
+      "science": 71,
+      "english": 77
+    },
+    "attendance": 88,
+    "skills": [
+      "CSS",
+      "DSA"
+    ],
+    "address": {
+      "city": "Patna",
+      "pincode": 800001
+    }
+  },
+  {
+    "student_id": 120,
+    "name": "Sneha Saxena",
+    "department": "ECE",
+    "age": 22,
+    "marks": {
+      "math": 78,
+      "science": 58,
+      "english": 74
+    },
+    "attendance": 73,
+    "skills": [
+      "CSS",
+      "Java"
+    ],
+    "address": {
+      "city": "Bhopal",
+      "pincode": 462001
+    }
+  },
+  {
+    "student_id": 121,
+    "name": "Sneha Nair",
+    "department": "CSE",
+    "age": 22,
+    "marks": {
+      "math": 78,
+      "science": 56,
+      "english": 60
+    },
+    "attendance": 84,
+    "skills": [
+      "JavaScript",
+      "AutoCAD"
+    ],
+    "address": {
+      "city": "Nagpur",
+      "pincode": 440001
+    }
+  },
+  {
+    "student_id": 122,
+    "name": "Jaya Yadav",
+    "department": "ECE",
+    "age": 23,
+    "marks": {
+      "math": 59,
+      "science": 69,
+      "english": 67
+    },
+    "attendance": 95,
+    "skills": [
+      "Verilog",
+      "PHP"
+    ],
+    "address": {
+      "city": "Coimbatore",
+      "pincode": 641001
+    }
+  },
+  {
+    "student_id": 123,
+    "name": "Roshni Yadav",
+    "department": "MECH",
+    "age": 19,
+    "marks": {
+      "math": 67,
+      "science": 74,
+      "english": 55
+    },
+    "attendance": 91,
+    "skills": [
+      "DSA",
+      "MongoDB",
+      "CSS",
+      "JavaScript"
+    ],
+    "address": {
+      "city": "Trivandrum",
+      "pincode": 695001
+    }
+  },
+  {
+    "student_id": 124,
+    "name": "Meena Rao",
+    "department": "EEE",
+    "age": 21,
+    "marks": {
+      "math": 83,
+      "science": 86,
+      "english": 56
+    },
+    "attendance": 89,
+    "skills": [
+      "MATLAB",
+      "Arduino"
+    ],
+    "address": {
+      "city": "Hyderabad",
+      "pincode": 500001
+    }
+  },
+  {
+    "student_id": 125,
+    "name": "Akash Sinha",
+    "department": "MECH",
+    "age": 23,
+    "marks": {
+      "math": 95,
+      "science": 72,
+      "english": 67
+    },
+    "attendance": 95,
+    "skills": [
+      "IoT",
+      "Python",
+      "SQL"
+    ],
+    "address": {
+      "city": "Pune",
+      "pincode": 411001
+    }
+  },
+  {
+    "student_id": 126,
+    "name": "Tina Das",
+    "department": "ECE",
+    "age": 20,
+    "marks": {
+      "math": 62,
+      "science": 75,
+      "english": 95
+    },
+    "attendance": 79,
+    "skills": [
+      "DSA",
+      "Verilog"
+    ],
+    "address": {
+      "city": "Raipur",
+      "pincode": 492001
+    }
+  },
+  {
+    "student_id": 127,
+    "name": "Vikas Rao",
+    "department": "EEE",
+    "age": 21,
+    "marks": {
+      "math": 92,
+      "science": 75,
+      "english": 56
+    },
+    "attendance": 95,
+    "skills": [
+      "HTML",
+      "MATLAB",
+      "Verilog"
+    ],
+    "address": {
+      "city": "Patna",
+      "pincode": 800001
+    }
+  },
+  {
+    "student_id": 128,
+    "name": "Isha Paul",
+    "department": "ECE",
+    "age": 20,
+    "marks": {
+      "math": 90,
+      "science": 71,
+      "english": 69
+    },
+    "attendance": 98,
+    "skills": [
+      "MATLAB",
+      "C"
+    ],
+    "address": {
+      "city": "Trivandrum",
+      "pincode": 695001
+    }
+  },
+  {
+    "student_id": 129,
+    "name": "Sunita Chopra",
+    "department": "CIVIL",
+    "age": 18,
+    "marks": {
+      "math": 79,
+      "science": 55,
+      "english": 60
+    },
+    "attendance": 70,
+    "skills": [
+      "PHP",
+      "SQL",
+      "Java"
+    ],
+    "address": {
+      "city": "Raipur",
+      "pincode": 492001
+    }
+  },
+  {
+    "student_id": 130,
+    "name": "Akash Sharma",
+    "department": "EEE",
+    "age": 23,
+    "marks": {
+      "math": 67,
+      "science": 90,
+      "english": 74
+    },
+    "attendance": 90,
+    "skills": [
+      "MongoDB",
+      "C"
+    ],
+    "address": {
+      "city": "Chennai",
+      "pincode": 600001
+    }
+  },
+  {
+    "student_id": 131,
+    "name": "Shruti Yadav",
+    "department": "ECE",
+    "age": 22,
+    "marks": {
+      "math": 72,
+      "science": 58,
+      "english": 56
+    },
+    "attendance": 78,
+    "skills": [
+      "React",
+      "DSA",
+      "Verilog",
+      "Python"
+    ],
+    "address": {
+      "city": "Nagpur",
+      "pincode": 440001
+    }
+  },
+  {
+    "student_id": 132,
+    "name": "Ritika Sinha",
+    "department": "IT",
+    "age": 20,
+    "marks": {
+      "math": 70,
+      "science": 64,
+      "english": 55
+    },
+    "attendance": 78,
+    "skills": [
+      "CSS",
+      "Node",
+      "C++",
+      "MATLAB"
+    ],
+    "address": {
+      "city": "Chennai",
+      "pincode": 600001
+    }
+  },
+  {
+    "student_id": 133,
+    "name": "Jaya Roy",
+    "department": "EEE",
+    "age": 20,
+    "marks": {
+      "math": 80,
+      "science": 62,
+      "english": 89
+    },
+    "attendance": 78,
+    "skills": [
+      "Verilog",
+      "MongoDB",
+      "C++"
+    ],
+    "address": {
+      "city": "Nagpur",
+      "pincode": 440001
+    }
+  },
+  {
+    "student_id": 134,
+    "name": "Roshni Verma",
+    "department": "CIVIL",
+    "age": 18,
+    "marks": {
+      "math": 89,
+      "science": 80,
+      "english": 93
+    },
+    "attendance": 99,
+    "skills": [
+      "Node",
+      "IoT",
+      "Arduino",
+      "Java"
+    ],
+    "address": {
+      "city": "Delhi",
+      "pincode": 110001
+    }
+  },
+  {
+    "student_id": 135,
+    "name": "Kavya Chopra",
+    "department": "CIVIL",
+    "age": 18,
+    "marks": {
+      "math": 85,
+      "science": 65,
+      "english": 72
+    },
+    "attendance": 70,
+    "skills": [
+      "MongoDB",
+      "DSA",
+      "JavaScript",
+      "C"
+    ],
+    "address": {
+      "city": "Visakhapatnam",
+      "pincode": 530001
+    }
+  },
+  {
+    "student_id": 136,
+    "name": "Kavya Patel",
+    "department": "EEE",
+    "age": 20,
+    "marks": {
+      "math": 55,
+      "science": 71,
+      "english": 95
+    },
+    "attendance": 80,
+    "skills": [
+      "AutoCAD",
+      "Verilog",
+      "Laravel"
+    ],
+    "address": {
+      "city": "Visakhapatnam",
+      "pincode": 530001
+    }
+  },
+  {
+    "student_id": 137,
+    "name": "Isha Mehta",
+    "department": "ECE",
+    "age": 23,
+    "marks": {
+      "math": 79,
+      "science": 89,
+      "english": 55
+    },
+    "attendance": 73,
+    "skills": [
+      "AutoCAD",
+      "HTML",
+      "Verilog",
+      "PHP"
+    ],
+    "address": {
+      "city": "Kochi",
+      "pincode": 682001
+    }
+  },
+  {
+    "student_id": 138,
+    "name": "Dinesh Verma",
+    "department": "ECE",
+    "age": 23,
+    "marks": {
+      "math": 92,
+      "science": 64,
+      "english": 55
+    },
+    "attendance": 97,
+    "skills": [
+      "Python",
+      "Java",
+      "AutoCAD"
+    ],
+    "address": {
+      "city": "Ahmedabad",
+      "pincode": 380001
+    }
+  },
+  {
+    "student_id": 139,
+    "name": "Sunita Sheikh",
+    "department": "IT",
+    "age": 18,
+    "marks": {
+      "math": 70,
+      "science": 80,
+      "english": 67
+    },
+    "attendance": 85,
+    "skills": [
+      "HTML",
+      "PHP",
+      "Verilog"
+    ],
+    "address": {
+      "city": "Hyderabad",
+      "pincode": 500001
+    }
+  },
+  {
+    "student_id": 140,
+    "name": "Harish Thakur",
+    "department": "MECH",
+    "age": 23,
+    "marks": {
+      "math": 61,
+      "science": 57,
+      "english": 65
+    },
+    "attendance": 98,
+    "skills": [
+      "JavaScript",
+      "C",
+      "IoT",
+      "Laravel"
+    ],
+    "address": {
+      "city": "Amritsar",
+      "pincode": 143001
+    }
+  }
+]
