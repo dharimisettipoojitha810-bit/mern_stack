@@ -1,0 +1,136 @@
+const express=require("express")
+const app=express();
+const PORT=4000;
+
+let studentDetails=[]
+app.use(express.json())//here middleware used to send data in json format
+
+app.post("/add-student",(req,res)=>{
+    const newStudent={
+        stdName:req.body.name, 
+        stdRollNo:req.body.rollNo,
+        stdBranch:req.body.branch,
+        stdSkills:req.body.skills,
+    };
+    studentDetails.push(newStudent);
+    res.status(200).json({message: "student added sucessfully", newStudent});
+});
+app.post("/add-multiple-students", (req, res) => {
+
+    const students = req.body.allStudents;
+
+    students.forEach((student) => {
+
+        const newStudent = {
+            stdName: student.name,
+            stdRollno: student.rollno,
+            stdBranch: student.branch,
+            stdSkills: student.skills
+        };
+
+        studentDetails.push(newStudent);
+    });
+
+    res.status(200).json({
+        message: "Multiple students added successfully",
+        students: studentDetails
+    });
+
+});
+
+//this get used to get all students
+app.get("/get-students",(req,res)=>{
+    res.status(200).json
+    ({students:studentDetails})
+
+});
+
+let collegeDetails = [];
+
+// POST API
+app.post("/add-college-details", (req, res) => {
+
+    const newCollege = {
+        collegeName: req.body.collegeName,
+        location: req.body.location,
+        branches: req.body.branches
+    };
+
+    collegeDetails.push(newCollege);
+
+    res.status(200).json({
+        message: "College details added successfully",
+        college: newCollege
+    });
+
+});
+
+// GET API
+app.get("/get-college-details", (req, res) => {
+
+    res.status(200).json({
+        colleges: collegeDetails
+    });
+
+});
+
+// Add multiple colleges
+app.post("/add-multiplecolleges", (req, res) => {
+
+    const allColleges = req.body.allColleges;
+
+    const formattedColleges = allColleges.map(college => ({
+        collegename: college.name,
+        collegecode: college.code,
+        collegecity: college.city,
+        collegebranches: college.branches
+    }));
+
+    collegeDetails.push(...formattedColleges);
+
+    res.status(200).json({
+        message: "all colleges added successfully"
+    });
+
+});
+
+app.get("/",(req,res)=>{
+      res.status(200).send("server running get method is called")
+
+})
+
+app.delete("/delete-student/{rollNumber}",(req,res)=>{
+  const  paramsROllNumber = req.params.rollNumber;
+  console.log(paramsROllNumber);
+
+})
+
+// app.get("/get_Users",(req,res)=>{
+//     res.status(200).json({
+//         name:"poojitha",
+//         role:"developer",
+//         email:"pooji@gmail.com",
+//         phno:"122345678",
+//     });
+
+// });
+app.listen(PORT,()=>{
+   console.log("Server running on port",PORT);
+});
+
+
+
+
+
+
+
+
+
+
+
+MVC:(model view controller):
+---------------------------
+-> router
+->controller
+->model
+->it will connect to our mongodb
