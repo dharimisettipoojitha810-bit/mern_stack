@@ -1,31 +1,35 @@
+const e=require("express")
 const Students=require("../model/StudentModel")
-//add student
-const addStudent=(req,res)=>{
-  try{
 
-    const{name, rollNo, branch , phone, email, address }=req.body;
-  const newStudent={
-    name:name,
-    rollNo:rollNo,
-    branch:branch,
-    phone:phone,
-    email:email,
-    address:address,
-  };
-  Students.insertOne(newStudent);
-  res.status(200).json({message:"Student Added Sucessfully"});
+const addStudents = async (req, res) => {
 
-} catch (e) {
-    res.status(500).json({message:"failde to add the student"})
-    console.log(err);
+    try {
 
+        const { name, rollno, branch, phone, email, address } = req.body;
 
-  }
-}
-//get all students
-//getstudent based on ID
-//delete student 
-//update student details
-//update only phoneno
+        const newStudent = await Students.create({
+            name,
+            rollno,
+            branch,
+            phone,
+            email,
+            address
+        });
 
-module.exports=addStudent
+        res.status(200).json({
+            message: "Students added successfully",
+            student: newStudent
+        });
+
+    } catch (e) {
+
+        console.log(e);
+
+        res.status(500).json({
+            message: "Failed to add Students",
+            error: e.message
+        });
+    }
+};
+
+module.exports = addStudents;

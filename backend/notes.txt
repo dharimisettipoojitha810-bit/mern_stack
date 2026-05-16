@@ -133,4 +133,21 @@ MVC:(model view controller):
 -> router
 ->controller
 ->model
-->it will connect to our mongodb
+->it will connect to our 
+
+
+
+
+
+
+
+
+
+const addCollege = require("../controller/collegeController");
+
+const express=require("express");
+
+const router=express.Router()
+
+router.post("/add-college",addCollege);
+module.exports=router;
