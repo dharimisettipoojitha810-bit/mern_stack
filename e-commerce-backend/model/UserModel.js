@@ -10,7 +10,7 @@ const userSchema=new mongoose.Schema({
     city:{type:String,require:true},
     userType:{type:String,require:true,default:"user"},
     state:{type:String,require:true},
-    zipCode:{type:Number,require:true},
+    zipCode:{type:String,require:true},
 
 
 },{timestamps:true})
