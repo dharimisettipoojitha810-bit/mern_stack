@@ -1,16 +1,13 @@
-
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 
 const promptSchema = new mongoose.Schema(
-    {
-    question:{type: String},
+  {
+    question: { type: String },
     promptData: { type: String },
-}, { timestamps: true }
+  },
+  { timestamps: true },
 );
 
 
-
-
-const promptModel = mongoose.model("prompt_data",promptSchema);
-
+const promptModel = mongoose.model("prompt_data", promptSchema);
 module.exports = promptModel;

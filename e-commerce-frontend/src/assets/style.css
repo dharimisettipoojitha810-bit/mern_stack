@@ -39,26 +39,83 @@
   flex-direction: column;
   background-color: bisque;
 }
-#form-container form{
-    /* border: 1px solid black; */
-    padding: 20px;
-    border-radius: 8px;
-    background-color: aliceblue;
-    box-shadow: 5px 5px 5px 5px black;
+#form-container form {
+  /* border: 1px solid black; */
+  padding: 20px;
+  border-radius: 8px;
+  background-color: aliceblue;
+  box-shadow: 5px 5px 5px 5px black;
 }
-#form-container label{
-    font-weight: bold;
+#form-container label {
+  font-weight: bold;
 }
 
-#cart-btn{
-    position: fixed;
+#cart-btn {
   z-index: 2;
-  border-radius: 10px;
+  border-radius: 8px;
   padding: 8px;
   border: none;
-  top: 300px;
+  margin-right: 20px;
   background-color: green;
   font-style: italic;
   color: aliceblue;
   font-weight: bold;
+}
+
+#cart-btn a {
+  color: aliceblue;
+  text-decoration: none;
+}
+
+#cart-products {
+  margin: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#products img {
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+#products button {
+  background-color: #f5a83c;
+  border-radius: 10px;
+
+  padding: 10px 20px;
+  font-weight: bold;
+  font-style: italic;
+  border: none;
+}
+
+#products button:hover {
+  transform: scale(1.05);
+  box-shadow: 3px 3px 3px black;
+}
+
+#filter-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#filter-div input {
+  width: 500px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+}
+
+#brand-name {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background-image: linear-gradient(black, red, green);
+  color: transparent;
+  -webkit-background-clip: text;
 }
