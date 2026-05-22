@@ -37,10 +37,10 @@ const editProducts = async (req, res) => {
 //delete products
 const deleteProduct = async (req, res) => {
   try {
-    const deletedProduct = Products.findByIdAndDelete(req.params.id);
-    res.status(200).json({ message: "Product Deleted", deleteProduct });
+    const deletedProduct =await Products.findByIdAndDelete(req.params.id);
+    res.status(200).json({ message: "Product Deleted", deletedProduct });
   } catch (error) {
-    res.status(500).json({ message: "failed to Delete", deleteProduct });
+    res.status(500).json({ message: "failed to Delete", error });
   }
 };
 
@@ -50,27 +50,27 @@ const getProductBasedOnId = async (req, res) => {
     const foundProduct = await Products.findById(req.params.id);
     res.status(200).json({ foundProduct });
   } catch (error) {
-    res.status(500).json({ message: "failed get Product" });
+    res.status(500).json({ message: "failed get Product", error });
   }
 };
 
 //get all products
 const getAllProducts = async (req, res) => {
   try {
-    const allProducts = Products.find();
+    const allProducts =await Products.find();
     res.status(200).json({ allProducts });
   } catch (error) {
-    res.status(500).json({ message: "failed get all Product" });
+    res.status(500).json({ message: "failed get all Product", error });
   }
 };
 
 //filter products based on price
 const filterProductsBasedOnPrice = async (req, res) => {
   try {
-    const { highestPrice, lowestPrice } = req.body;
+    const { max, min } = req.query;
     const filteredProducts = await Products.find({
-      price: { $gte: lowestPrice },
-      price: { $lte: highestPrice },
+      price: { $gte: min },
+      price: { $lte: max },
     });
     res.status(200).json({ filteredProducts });
   } catch (error) {
@@ -81,8 +81,8 @@ const filterProductsBasedOnPrice = async (req, res) => {
 //sort products based on price
 const sortProductsBasedOnPrices = async (req, res) => {
   try {
-    const sortOrder = Number(req.params.order);
-    const sortedProducts = Products.find().sort({ price: sortOrder });
+    const  sortPrice= Number(req.query.sortPrice)||1;
+    const sortedProducts =await Products.find().sort({ price: sortPrice });
     res.status(200).json({ sortedProducts });
   } catch (error) {
     res

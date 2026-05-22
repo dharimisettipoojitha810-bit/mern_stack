@@ -4,9 +4,8 @@ const verifyToken = async (req, res, next) => {
     const Authentication = req.headers["authorization"];
     const token = Authentication.split(" ")[1];
     const decoded = await jwt.verify(token, process.env.SECRETE_KEY);
-    req.body.user = decoded;
     console.log("Verified");
-
+ 
     return next();
   } catch (err) {
     if (err instanceof jwt.NotBeforeError) {

@@ -22,3 +22,61 @@ router.get("/filter-products",filterProductsBasedOnPrice);
 router.get("/sort-products",sortProductsBasedOnPrices)
 
 module.exports = router;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//filter product based on price
+const filterProductsBasedOnPrice = async (req, res)=>{
+try{
+  const {max,min} = req.query;
+  const filterProduct = await ProductModel.find({
+    price:{$gte:min},
+    price:{$lte:max},
+
+  });
+  res.status(200).json({ filterProduct});
+}catch(error){
+  res.status(500).json({message:"failed to filter",error});
+
+
+}
+}

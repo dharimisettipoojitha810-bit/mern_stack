@@ -81,6 +81,7 @@ const filterProductsBasedOnPrice = async (req, res) => {
 //sort products based on price
 const sortProductsBasedOnPrices = async (req, res) => {
   try {
+    const {sortprice}=req.query||1;
     const sortOrder = Number(req.params.order);
     const sortedProducts = Products.find().sort({ price: sortOrder });
     res.status(200).json({ sortedProducts });

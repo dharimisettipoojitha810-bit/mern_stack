@@ -1,27 +1,25 @@
 const jwt=require("jsonwebtoken");
-const isAdmin = async (req, res, next) => {
-
-  console.log("Is Admin");
+const isUser = async (req, res, next) => {
   try {
     const Authentication = req.headers["authorization"];
     const token = Authentication.split(" ")[1];
     const decoded = await jwt.verify(token, process.env.SECRETE_KEY);
-    console.log("token Verified");
-    console.log(decoded);
 
-    if (decoded.role != "admin") {
-      return res.status(403).json({ message: "Access Denied , Admin only" });
+    console.log(decoded);
+    
+    if (decoded.role!= "user") {
+      return res.status(403).json({ message: "Access Denied , User only" });
     }
 
     return next();
   } catch (error) {
-    if (err instanceof jwt.NotBeforeError) {
+    if (error instanceof jwt.NotBeforeError) {
       return res.status(401).json({ message: "Token still not active" });
     }
-    if (err instanceof jwt.TokenExpiredError) {
+    if (error instanceof jwt.TokenExpiredError) {
       return res.status(401).json({ message: "Token Expired" });
     }
-    if (err instanceof jwt.JsonWebTokenError) {
+    if (error instanceof jwt.JsonWebTokenError) {
       return res.status(401).json({ message: "invalid token" });
     }
 
@@ -29,4 +27,4 @@ const isAdmin = async (req, res, next) => {
   }
 };
 
-module.exports = isAdmin;
+module.exports = isUser;
